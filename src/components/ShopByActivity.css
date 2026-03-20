@@ -1,0 +1,262 @@
+.shop-by-activity {
+  background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
+  padding: 3rem 2rem;
+  animation: fadeIn 1s ease;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+  animation: fadeInDown 0.8s ease;
+}
+
+.activity-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin: 0;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: slideInLeft 1s ease;
+}
+
+.scroll-buttons {
+  display: flex;
+  gap: 0.75rem;
+  animation: slideInRight 1s ease;
+}
+
+.activity-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 1rem 0;
+}
+
+.activity-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.activity-container {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  min-width: min-content;
+}
+
+.activity-card {
+  flex: 0 0 auto;
+  width: 280px;
+  height: 340px;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 8px 30px rgba(30, 58, 138, 0.2);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 3px solid transparent;
+  animation: scaleIn 0.6s ease backwards;
+}
+
+.activity-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+.activity-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(30, 58, 138, 0.4);
+  border-color: var(--color-primary);
+}
+
+.activity-card:hover::before {
+  opacity: 1;
+}
+
+.activity-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.activity-card:hover img {
+  transform: scale(1.15) rotate(2deg);
+}
+
+.activity-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 60%, transparent 100%);
+  padding: 2.5rem 1.5rem 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  z-index: 2;
+  transition: all 0.4s ease;
+}
+
+.activity-card:hover .activity-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 60%, transparent 100%);
+  padding-bottom: 2.5rem;
+}
+
+.activity-overlay h3 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.activity-card:hover .activity-overlay h3 {
+  transform: scale(1.05);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.scroll-btn {
+  display: block;
+  position: relative;
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  overflow: hidden;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  flex-shrink: 0;
+}
+
+.scroll-btn:before,
+.scroll-btn:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 7px;
+}
+
+.scroll-btn:before {
+  border: 4px solid #93c5fd;
+  transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.scroll-btn:after {
+  border: 4px solid #006bb3;
+  transform: scale(1.3);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+}
+
+.scroll-btn:hover:before,
+.scroll-btn:focus:before {
+  opacity: 0;
+  transform: scale(0.7);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.scroll-btn:hover:after,
+.scroll-btn:focus:after {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.button-box {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 112px;
+}
+
+.button-elem {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 17px 18px 0 18px;
+  fill: #93c5fd;
+  transition: fill 0.3s ease;
+}
+
+.scroll-btn-right .button-elem {
+  transform: rotate(180deg);
+}
+
+.scroll-btn:hover .button-elem {
+  fill: #006bb3;
+}
+
+.scroll-btn:hover .button-box,
+.scroll-btn:focus .button-box {
+  transition: 0.4s;
+  transform: translateX(-56px);
+}
+
+.scroll-btn-left:hover .button-box,
+.scroll-btn-left:focus .button-box {
+  transform: translateX(56px);
+}
+
+.scroll-btn:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  .shop-by-activity {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .activity-header {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .activity-header h2 {
+    font-size: 2rem;
+  }
+
+  .scroll-buttons {
+    align-self: flex-end;
+  }
+
+  .activity-container {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .activity-card {
+    width: 260px;
+    height: 340px;
+  }
+
+  .activity-overlay {
+    padding: 2.5rem 1.5rem 1.5rem;
+  }
+
+  .activity-overlay h3 {
+    font-size: 1.4rem;
+    padding: 0.9rem 1.6rem;
+  }
+}

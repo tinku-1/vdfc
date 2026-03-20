@@ -1,0 +1,360 @@
+/* Top Navbar with Logo, Search, and Icons */
+.navbar-top {
+  background: #ffffff;
+  padding: 0.75rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(30, 58, 138, 0.1);
+  border-bottom: 1px solid var(--color-border);
+  animation: fadeInDown 0.6s ease;
+}
+
+.navbar-top-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  animation: slideInLeft 0.8s ease;
+  flex-shrink: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(30, 58, 138, 0.2));
+}
+
+.navbar-brand h2 {
+  color: var(--color-dark);
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  animation: fadeInDown 0.8s ease 0.2s backwards;
+}
+
+.navbar-search {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+  max-width: 500px;
+  animation: scaleIn 0.8s ease 0.4s backwards;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.5rem 0.875rem;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  background: #f9fafb;
+  color: var(--color-text-dark);
+  font-size: 0.875rem;
+  outline: none;
+  transition: all 0.3s ease;
+  height: 38px;
+}
+
+.search-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+  background: #ffffff;
+}
+
+.search-input::placeholder {
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.search-btn {
+  position: relative;
+  background: rgb(0, 107, 179);
+  color: white;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 9999px;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  height: 38px;
+  overflow: hidden;
+  outline: none;
+}
+
+.search-btn::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+.search-btn:hover {
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.search-btn:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.search-btn:active {
+  transform: scale(1);
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+  60% {
+    left: 100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+/* Action Buttons (Profile, Saved, Cart, Admin) */
+.navbar-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  animation: slideInRight 0.8s ease 0.3s backwards;
+  flex-shrink: 0;
+}
+
+.action-btn {
+  background: transparent;
+  border: none;
+  color: var(--color-text-dark);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  transition: all 0.3s ease;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+}
+
+.action-btn:hover {
+  color: var(--color-primary);
+  background: rgba(30, 58, 138, 0.05);
+}
+
+.action-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.action-btn span {
+  font-size: 0.65rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.admin-btn-top {
+  position: relative;
+  background: rgb(0, 107, 179);
+  color: white;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  margin-left: 0.25rem;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  overflow: hidden;
+  outline: none;
+}
+
+.admin-btn-top::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+.admin-btn-top:hover {
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.admin-btn-top:hover::before {
+  animation: admin-shine 1.5s ease-out infinite;
+}
+
+@keyframes admin-shine {
+  0% {
+    left: -100px;
+  }
+  60% {
+    left: 100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+/* Bottom Menu Bar */
+.navbar-menu-bar {
+  background: #f9fafb;
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 1px 3px rgba(30, 58, 138, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  animation: fadeInDown 0.6s ease 0.3s backwards;
+}
+
+.navbar-menu-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0.65rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.menu-link {
+  color: var(--color-text-dark);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.4rem 0.875rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  position: relative;
+  white-space: nowrap;
+}
+
+.menu-link:hover {
+  color: var(--color-primary);
+  background: rgba(30, 58, 138, 0.05);
+}
+
+
+@media (max-width: 1024px) {
+  .navbar-top-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .navbar-brand h2 {
+    font-size: 1.2rem;
+  }
+
+  .navbar-search {
+    order: 3;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .navbar-actions {
+    gap: 0.8rem;
+  }
+
+  .action-btn span {
+    display: none;
+  }
+
+  .admin-btn-top {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .navbar-menu-container {
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .menu-link {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-top {
+    padding: 0.8rem 1rem;
+  }
+
+  .navbar-brand h2 {
+    font-size: 1.1rem;
+  }
+
+  .brand-logo {
+    height: 35px;
+  }
+
+  .search-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .action-btn {
+    padding: 0.3rem 0.4rem;
+  }
+
+  .admin-btn-top {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  .navbar-menu-container {
+    gap: 0.5rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .menu-link {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
+

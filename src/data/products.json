@@ -1,0 +1,555 @@
+[
+  {
+    "id": 1,
+    "name": "Abdominal Belt DL",
+    "category": "Abdominal Belts",
+    "image": "/products/abdominal/ABDOMINAL BELT DL VDFC.png",
+    "description": "Double layer abdominal belt providing superior support and compression for post-surgical recovery and abdominal injuries."
+  },
+  {
+    "id": 2,
+    "name": "Abdominal Binder MF",
+    "category": "Abdominal Belts",
+    "image": "/products/abdominal/ABDOMINAL BINDER  MF VDFC.png",
+    "description": "Multi-functional abdominal binder designed for optimal comfort and support during recovery."
+  },
+  {
+    "id": 3,
+    "name": "Abdominal Belt SF",
+    "category": "Abdominal Belts",
+    "image": "/products/abdominal/ABDOMINAL SF VDFC.png",
+    "description": "Single function abdominal belt for everyday support and pain relief."
+  },
+  {
+    "id": 4,
+    "name": "Pelvic Binder VT-04",
+    "category": "Abdominal Belts",
+    "image": "/products/abdominal/VT-04 Pelvic Binder.jpg",
+    "description": "Specialized pelvic binder for stabilization and support of pelvic injuries."
+  },
+  {
+    "id": 5,
+    "name": "Coccyx Pillow VT-05",
+    "category": "Abdominal Belts",
+    "image": "/products/abdominal/VT-05 Coccyx Pillow.webp",
+    "description": "Ergonomic coccyx pillow designed to relieve tailbone pain and provide comfort while sitting."
+  },
+  {
+    "id": 6,
+    "name": "Bed Traction Kit",
+    "category": "Cervical Products",
+    "image": "/products/cervical/BED TRACTION KIT.png",
+    "description": "Complete bed traction kit for cervical spine relief and therapeutic positioning."
+  },
+  {
+    "id": 7,
+    "name": "Cervical Immobilizer",
+    "category": "Cervical Products",
+    "image": "/products/cervical/CERVICAL IMMOBILIZER VDFC.png",
+    "description": "Premium cervical immobilizer providing maximum support and stabilization for neck injuries."
+  },
+  {
+    "id": 8,
+    "name": "Cervical Immobilizer Pro",
+    "category": "Cervical Products",
+    "image": "/products/cervical/CERVICAL IMMOBILIZER VDFC1.png",
+    "description": "Advanced cervical immobilizer with enhanced comfort features."
+  },
+  {
+    "id": 9,
+    "name": "Hard Collar",
+    "category": "Cervical Products",
+    "image": "/products/cervical/HARD COLLAR VDFC.png",
+    "description": "Rigid cervical collar for maximum neck stabilization and support."
+  },
+  {
+    "id": 10,
+    "name": "Soft Collar",
+    "category": "Cervical Products",
+    "image": "/products/cervical/SOFT COLLAR VDFC.png",
+    "description": "Comfortable soft cervical collar for mild to moderate neck support."
+  },
+  {
+    "id": 11,
+    "name": "Cervical Collar Bone VC-01",
+    "category": "Cervical Products",
+    "image": "/products/cervical/VC-01 Cervical Collor-Bone.jpeg",
+    "description": "Bone-shaped cervical collar for enhanced anatomical support."
+  },
+  {
+    "id": 12,
+    "name": "Cervical Pillow VC-05",
+    "category": "Cervical Products",
+    "image": "/products/cervical/VC-05 Cervical Pillow.jpg",
+    "description": "Orthopedic cervical pillow designed to maintain proper neck alignment during sleep."
+  },
+  {
+    "id": 13,
+    "name": "Cervical Traction Kit VC-06",
+    "category": "Cervical Products",
+    "image": "/products/cervical/VC-06 Cervical Traction Kit.jpeg",
+    "description": "Professional cervical traction kit for home-based neck therapy."
+  },
+  {
+    "id": 14,
+    "name": "Posture Corrector",
+    "category": "Rib Belts",
+    "image": "/products/rib/Posture Corrector VDFC.jpg",
+    "description": "Adjustable posture corrector to improve alignment and reduce back strain."
+  },
+  {
+    "id": 15,
+    "name": "Rib Belt Female",
+    "category": "Rib Belts",
+    "image": "/products/rib/RIB  BELT FEMALE VDFC.png",
+    "description": "Specially designed rib belt for female anatomy, providing comfortable compression."
+  },
+  {
+    "id": 16,
+    "name": "Rib Belt Male",
+    "category": "Rib Belts",
+    "image": "/products/rib/RIB BELT MALE VDFC.png",
+    "description": "Anatomically designed rib belt for men, offering secure support and pain relief."
+  },
+  {
+    "id": 17,
+    "name": "Sternal Corset",
+    "category": "Rib Belts",
+    "image": "/products/rib/STERNAL CORSET VDFC.png",
+    "description": "Medical-grade sternal corset for post-surgical chest wall stabilization."
+  },
+  {
+    "id": 18,
+    "name": "Arm Sling Pouch",
+    "category": "Shoulder & Arm",
+    "image": "/products/shoulder/Arm Sling Pouch VDFC.jpg",
+    "description": "Comfortable arm sling with pouch design for superior arm support."
+  },
+  {
+    "id": 19,
+    "name": "Clavicle Support",
+    "category": "Shoulder & Arm",
+    "image": "/products/shoulder/Clavicle Support VDFC.jpg",
+    "description": "Figure-8 clavicle support for collarbone fractures and posture correction."
+  },
+  {
+    "id": 20,
+    "name": "Shoulder Abduction Pillow",
+    "category": "Shoulder & Arm",
+    "image": "/products/shoulder/SHOULDER ABDUCTION PILLOW VDFC.png",
+    "description": "Post-surgical shoulder abduction pillow for rotator cuff recovery."
+  },
+  {
+    "id": 21,
+    "name": "Shoulder Immobilizer EC",
+    "category": "Shoulder & Arm",
+    "image": "/products/shoulder/SHOULDER IMMOBILIZER EC VDFC.png",
+    "description": "Enhanced comfort shoulder immobilizer with adjustable straps."
+  },
+  {
+    "id": 22,
+    "name": "Shoulder Immobilizer SH Cup",
+    "category": "Shoulder & Arm",
+    "image": "/products/shoulder/SHOULDER IMMOBILIZER SH CUP VDFC.png",
+    "description": "Shoulder immobilizer with cup design for enhanced stability."
+  },
+  {
+    "id": 23,
+    "name": "Shoulder Immobilizer SP",
+    "category": "Shoulder & Arm",
+    "image": "/products/shoulder/SHOULDER IMMOBILIZER SP VDFC.png",
+    "description": "Special edition shoulder immobilizer with premium materials."
+  },
+  {
+    "id": 24,
+    "name": "Shoulder Support",
+    "category": "Shoulder & Arm",
+    "image": "/products/shoulder/Shoulder Support VDFC.jpg",
+    "description": "Versatile shoulder support for injury prevention and pain management."
+  },
+  {
+    "id": 25,
+    "name": "Ankle Wrap EC VA-01",
+    "category": "Ankle Splints",
+    "image": "/products/ankle/VA-01 Ankle Wrap EC.jpg",
+    "description": "Enhanced comfort ankle wrap with adjustable compression."
+  },
+  {
+    "id": 26,
+    "name": "Ankle Wrap MF VA-02",
+    "category": "Ankle Splints",
+    "image": "/products/ankle/VA-02 Ankle Wrap MF.jpg",
+    "description": "Multi-functional ankle wrap for sports and rehabilitation."
+  },
+  {
+    "id": 27,
+    "name": "Ankle Brace VA-03",
+    "category": "Ankle Splints",
+    "image": "/products/ankle/VA-03 Ankle Brace.jpg",
+    "description": "Rigid ankle brace providing maximum stability for severe sprains."
+  },
+  {
+    "id": 28,
+    "name": "Anklet with Binder VA-04",
+    "category": "Ankle Splints",
+    "image": "/products/ankle/VA-04 Anklet with Binder.jpg",
+    "description": "Combination anklet and binder for comprehensive ankle support."
+  },
+  {
+    "id": 29,
+    "name": "Foot Drop Splint VA-05",
+    "category": "Ankle Splints",
+    "image": "/products/ankle/VA-05  Foot Drop Splint.jpg",
+    "description": "Specialized splint designed to prevent and treat foot drop conditions."
+  },
+  {
+    "id": 30,
+    "name": "Ankle Immobilizer VA-06",
+    "category": "Ankle Splints",
+    "image": "/products/ankle/VA-06 Ankle Immobilzer.jpg",
+    "description": "Complete ankle immobilizer for post-injury or post-surgical recovery."
+  },
+  {
+    "id": 31,
+    "name": "Ankle Binder 3D VA-07",
+    "category": "Ankle Splints",
+    "image": "/products/ankle/VA-07 Ankle Binder 3D.jpg",
+    "description": "3D knitted ankle binder offering superior comfort and breathability."
+  },
+  {
+    "id": 32,
+    "name": "Finger Cot VF-01",
+    "category": "Finger Splints",
+    "image": "/products/finger/VF-01 Finger Cot.jpg",
+    "description": "Protective finger cot for injury prevention and healing support."
+  },
+  {
+    "id": 33,
+    "name": "Spoon Splint VF-02",
+    "category": "Finger Splints",
+    "image": "/products/finger/VF-02 Spoon Splint.jpg",
+    "description": "Aluminum spoon splint for finger fracture immobilization."
+  },
+  {
+    "id": 34,
+    "name": "Finger Extension VF-03",
+    "category": "Finger Splints",
+    "image": "/products/finger/VF-03 Finger Extension.jpg",
+    "description": "Dynamic finger extension splint for improving range of motion."
+  },
+  {
+    "id": 35,
+    "name": "Strip Finger VF-04",
+    "category": "Finger Splints",
+    "image": "/products/finger/VF-04 Strip Finger.jpg",
+    "description": "Simple strip finger splint for minor injuries and protection."
+  },
+  {
+    "id": 36,
+    "name": "Bunion Splint VF-05",
+    "category": "Finger Splints",
+    "image": "/products/finger/VF-05 Bunion Splnt.jpg",
+    "description": "Corrective bunion splint for pain relief and alignment improvement."
+  },
+  {
+    "id": 37,
+    "name": "Gel Physio Ball VG-01",
+    "category": "General Therapy",
+    "image": "/products/therapy/VG-01 Gel Physio Ball.jpg",
+    "description": "Therapeutic gel physio ball for hand strengthening and rehabilitation exercises."
+  },
+  {
+    "id": 38,
+    "name": "Thera Bands VG-02",
+    "category": "General Therapy",
+    "image": "/products/therapy/VG-02 Thera Bands.jpg",
+    "description": "Professional resistance therapy bands in multiple strength levels."
+  },
+  {
+    "id": 39,
+    "name": "Ice Pack VG-03",
+    "category": "General Therapy",
+    "image": "/products/therapy/VG-03 Ice Pack.jpg",
+    "description": "Reusable ice pack for cold therapy and inflammation reduction."
+  },
+  {
+    "id": 40,
+    "name": "Hot n Cold Pack VG-04",
+    "category": "General Therapy",
+    "image": "/products/therapy/VG-04 Hot n Cold Pack.jpg",
+    "description": "Dual-purpose hot and cold therapy pack for versatile pain management."
+  },
+  {
+    "id": 41,
+    "name": "Neck Pillow MF VG-05",
+    "category": "General Therapy",
+    "image": "/products/therapy/VG-05 Nek Pillow-MF.jpg",
+    "description": "Multi-functional neck pillow for travel and therapeutic support."
+  },
+  {
+    "id": 42,
+    "name": "Shoulder Pulley VG-06",
+    "category": "General Therapy",
+    "image": "/products/therapy/VG-06 Shoulder Pully.jpg",
+    "description": "Over-door shoulder pulley system for range of motion exercises."
+  },
+  {
+    "id": 43,
+    "name": "Finger Exerciser VG-07",
+    "category": "General Therapy",
+    "image": "/products/therapy/VG-07 Finger Exerciser.jfif",
+    "description": "Hand and finger exerciser for strengthening and rehabilitation."
+  },
+  {
+    "id": 44,
+    "name": "Hot Water Bag VG-08",
+    "category": "General Therapy",
+    "image": "/products/therapy/VG-08 Hot Water Bag.jpg",
+    "description": "Traditional hot water bag for heat therapy and comfort."
+  },
+  {
+    "id": 45,
+    "name": "Stress Ball Smiley VG-09",
+    "category": "General Therapy",
+    "image": "/products/therapy/VG-09 Smiley.jpg",
+    "description": "Smiley face stress ball for hand exercises and stress relief."
+  },
+  {
+    "id": 46,
+    "name": "Wrist Wrap Elastic VH-01",
+    "category": "Wrist & Hand",
+    "image": "/products/wrist/VH-01 Wrist Wrap  Elst.jpg",
+    "description": "Elastic wrist wrap providing flexible support for daily activities."
+  },
+  {
+    "id": 47,
+    "name": "Wrist Wrap DT VH-02",
+    "category": "Wrist & Hand",
+    "image": "/products/wrist/VH-02 Wrist Wrap  DT.jpg",
+    "description": "Double-thickness wrist wrap for enhanced support and stability."
+  },
+  {
+    "id": 48,
+    "name": "Thumb Spica VH-03",
+    "category": "Wrist & Hand",
+    "image": "/products/wrist/VH-03 Thumb Spica.jpg",
+    "description": "Thumb spica splint for CMC joint arthritis and De Quervain's syndrome."
+  },
+  {
+    "id": 49,
+    "name": "Wrist Cock Up VH-04",
+    "category": "Wrist & Hand",
+    "image": "/products/wrist/VH-04 Wrist cock up.jpg",
+    "description": "Cock-up wrist splint maintaining optimal wrist position during healing."
+  },
+  {
+    "id": 50,
+    "name": "Wrist Brace 10 VH-05",
+    "category": "Wrist & Hand",
+    "image": "/products/wrist/VH-05 Wrist Brace 10.jpg",
+    "description": "10-inch wrist brace with superior support for carpal tunnel syndrome."
+  },
+  {
+    "id": 51,
+    "name": "Forearm Brace Rev VH-06",
+    "category": "Wrist & Hand",
+    "image": "/products/wrist/VH-06 Fore Arm Brace Rev.jpg",
+    "description": "Reverse forearm brace for comprehensive wrist and forearm support."
+  },
+  {
+    "id": 52,
+    "name": "Tennis Elbow DT VH-07",
+    "category": "Wrist & Hand",
+    "image": "/products/wrist/VH-07 Tennis Elbow DT.jpg",
+    "description": "Double-tension tennis elbow strap for lateral epicondylitis relief."
+  },
+  {
+    "id": 53,
+    "name": "Elbow Cap EC VH-08",
+    "category": "Wrist & Hand",
+    "image": "/products/wrist/VH-08 Elbow Cap EC.jpg",
+    "description": "Enhanced comfort elbow cap providing compression and warmth."
+  },
+  {
+    "id": 54,
+    "name": "Elbow Cap 3D VH-09",
+    "category": "Wrist & Hand",
+    "image": "/products/wrist/VH-09 Elbow Cap 3D.jpg",
+    "description": "3D knitted elbow cap with superior breathability and comfort."
+  },
+  {
+    "id": 55,
+    "name": "Elbow Strap VH-10",
+    "category": "Wrist & Hand",
+    "image": "/products/wrist/VH-10 Elbow Strap.jpg",
+    "description": "Adjustable elbow strap for targeted compression and pain relief."
+  },
+  {
+    "id": 56,
+    "name": "Knee Support Hinged DT VK-01",
+    "category": "Knee Belts",
+    "image": "/products/knee/VK-01 Knee Support hinged DT.jpg",
+    "description": "Double-thickness hinged knee support with bilateral hinges for maximum stability."
+  },
+  {
+    "id": 57,
+    "name": "Knee Support Hinged EC VK-02",
+    "category": "Knee Belts",
+    "image": "/products/knee/VK-02 Knee Support Hinged EC.jpg",
+    "description": "Enhanced comfort hinged knee support with adjustable straps."
+  },
+  {
+    "id": 58,
+    "name": "Knee Cap EC VK-03",
+    "category": "Knee Belts",
+    "image": "/products/knee/VK-03 Knee Cap EC.jpg",
+    "description": "Enhanced comfort knee cap with open patella design."
+  },
+  {
+    "id": 59,
+    "name": "Skin Traction Kit VK-04",
+    "category": "Knee Belts",
+    "image": "/products/knee/VK-04 Skin Traction Kit.jpg",
+    "description": "Complete skin traction kit for lower limb management."
+  },
+  {
+    "id": 60,
+    "name": "Knee Brace Long VK-05",
+    "category": "Knee Belts",
+    "image": "/products/knee/VK-05 Knee Brace LOng.jpg",
+    "description": "Long knee brace providing extended support for severe injuries."
+  },
+  {
+    "id": 61,
+    "name": "Knee Brace 20 Inch VK-06",
+    "category": "Knee Belts",
+    "image": "/products/knee/VK-06 KNee Brace  20inch.jpg",
+    "description": "20-inch knee brace for comprehensive knee and thigh support."
+  },
+  {
+    "id": 62,
+    "name": "Knee Brace Short VK-07",
+    "category": "Knee Belts",
+    "image": "/products/knee/VK-07 Knee BRace Short.jpg",
+    "description": "Short knee brace ideal for sports and mild knee instability."
+  },
+  {
+    "id": 63,
+    "name": "ROM Knee Brace VK-08",
+    "category": "Knee Belts",
+    "image": "/products/knee/VK-08 ROM Knee Brace.png",
+    "description": "Range of motion knee brace with adjustable hinges for controlled movement."
+  },
+  {
+    "id": 64,
+    "name": "Stocking BK VK-09",
+    "category": "Knee Belts",
+    "image": "/products/knee/VK-09Stocking BK.jpg",
+    "description": "Below-knee compression stocking for venous support and circulation."
+  },
+  {
+    "id": 65,
+    "name": "Stocking AK VK-10",
+    "category": "Knee Belts",
+    "image": "/products/knee/VK-10 Stocking AK.jpeg",
+    "description": "Above-knee compression stocking for full leg support."
+  },
+  {
+    "id": 66,
+    "name": "Knee Cap 3D VK-11",
+    "category": "Knee Belts",
+    "image": "/products/knee/VK-11 KNee Cap 3D.jpg",
+    "description": "3D knitted knee cap with advanced compression technology."
+  },
+  {
+    "id": 67,
+    "name": "LS Belt EC",
+    "category": "Lumbar Belts",
+    "image": "/products/lumbar/LS BELT EC.png",
+    "description": "Enhanced comfort lumbar sacral belt for lower back support."
+  },
+  {
+    "id": 68,
+    "name": "LS Belt MF VL-02",
+    "category": "Lumbar Belts",
+    "image": "/products/lumbar/VL-02 LS Belt MF.jpg",
+    "description": "Multi-functional lumbar sacral belt with customizable compression."
+  },
+  {
+    "id": 69,
+    "name": "Thoracic Lumbar Brace MF VL-03",
+    "category": "Lumbar Belts",
+    "image": "/products/lumbar/VL-03 Thoracic Lumbar Brace MF.jpg",
+    "description": "Comprehensive thoracic lumbar brace for mid to lower back support."
+  },
+  {
+    "id": 70,
+    "name": "Pelvic Traction Belt VL-05",
+    "category": "Lumbar Belts",
+    "image": "/products/lumbar/VL-05 Pelvic Traction Belt.jpg",
+    "description": "Pelvic traction belt for therapeutic spinal decompression."
+  },
+  {
+    "id": 71,
+    "name": "Single Pod VW-01",
+    "category": "Walker & Aids",
+    "image": "/products/walker/VW-01 Single POd.jpg",
+    "description": "Single pod walking stick for basic mobility support."
+  },
+  {
+    "id": 72,
+    "name": "Tripod VW-02",
+    "category": "Walker & Aids",
+    "image": "/products/walker/VW-02 Tri Pod.jpg",
+    "description": "Three-point tripod cane providing enhanced stability."
+  },
+  {
+    "id": 73,
+    "name": "Quadrapod VW-03",
+    "category": "Walker & Aids",
+    "image": "/products/walker/VW-03 Quadra POd.jpg",
+    "description": "Four-point quad cane for maximum balance and support."
+  },
+  {
+    "id": 74,
+    "name": "Elbow Crutch VW-04",
+    "category": "Walker & Aids",
+    "image": "/products/walker/VW-04 Elbow Crutch.jpg",
+    "description": "Adjustable elbow crutch for partial weight-bearing mobility."
+  },
+  {
+    "id": 75,
+    "name": "Walker Matty VW-05",
+    "category": "Walker & Aids",
+    "image": "/products/walker/VW-05 Walker Matty.jpg",
+    "description": "Matte finish walker with folding capability for easy storage."
+  },
+  {
+    "id": 76,
+    "name": "Walker SS VW-06",
+    "category": "Walker & Aids",
+    "image": "/products/walker/VW-06 Walker SS.jpg",
+    "description": "Stainless steel walker providing durability and rust resistance."
+  },
+  {
+    "id": 77,
+    "name": "Walker SS Wheels VW-07",
+    "category": "Walker & Aids",
+    "image": "/products/walker/VW-07 Walker SS wheels.jpg",
+    "description": "Wheeled stainless steel walker for smooth mobility."
+  },
+  {
+    "id": 78,
+    "name": "Back Rest Regular VW-08",
+    "category": "Walker & Aids",
+    "image": "/products/walker/VW-08 Back Rest Reg.jpg",
+    "description": "Regular back rest for wheelchairs and seating support."
+  },
+  {
+    "id": 79,
+    "name": "Back Rest Classic VW-09",
+    "category": "Walker & Aids",
+    "image": "/products/walker/VW-09 Back rest Cls.png",
+    "description": "Classic design back rest offering superior lumbar support."
+  }
+]
