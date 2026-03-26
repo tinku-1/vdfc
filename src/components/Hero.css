@@ -245,3 +245,87 @@
   }
 }
 
+@media (max-width: 640px) {
+  .hero {
+    height: 420px;
+    padding: 2rem 0;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+    gap: 1.5rem;
+  }
+
+  .hero-main-title {
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    margin: 0 0 0.75rem;
+  }
+
+  .hero-tagline {
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    margin: 0 0 1rem;
+  }
+
+  .hero-cta {
+    margin-top: 0;
+  }
+
+  .cta-badge {
+    min-width: auto;
+    width: 100%;
+    max-width: 280px;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 10px 25px rgba(30, 58, 138, 0.3);
+  }
+
+  .cta-badge h3 {
+    font-size: 1rem;
+    margin: 0 0 1rem;
+  }
+
+  .hero-cta-btn {
+    padding: 0.9rem 2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 380px;
+    padding: 1.5rem 0;
+  }
+
+  .hero-content {
+    padding: 0 0.75rem;
+    gap: 1rem;
+  }
+
+  .hero-main-title {
+    font-size: 1.4rem;
+    letter-spacing: 0;
+  }
+
+  .hero-tagline {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+  }
+
+  .cta-badge {
+    padding: 1.25rem 0.75rem;
+    min-width: auto;
+    max-width: 100%;
+  }
+
+  .cta-badge h3 {
+    font-size: 0.9rem;
+    margin: 0 0 0.75rem;
+  }
+
+  .hero-cta-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.8rem;
+  }
+}
+
