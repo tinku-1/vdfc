@@ -49,17 +49,11 @@ const DailySupport = () => {
 
       <div className="daily-support-grid">
         {categories.map((category) => (
-          <div key={category.id} className="parent">
-            <div className="support-card">
-              <div className="content-box">
-                <span className="card-title">{category.name}</span>
-                <p className="card-content">{category.items}</p>
-                <span className="see-more">View Products</span>
-              </div>
-              <div className="date-box">
-                <img src={category.image} alt={category.name} />
-              </div>
+          <div key={category.id} className="card">
+            <div className="image">
+              <img src={category.image} alt={category.name} />
             </div>
+            <span className="title">{category.name}</span>
           </div>
         ))}
       </div>
