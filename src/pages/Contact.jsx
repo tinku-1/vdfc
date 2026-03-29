@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <div className="contact-hero">
-        <div className="contact-hero-content">          <img src="/vdfc-logo.svg" alt="VDFC Logo" className="contact-hero-logo" />          <h1>Get In Touch</h1>
+        <div className="contact-hero-content">          <img src="/vdfc-logo.jpeg" alt="VDFC Logo" className="contact-hero-logo" />          <h1>Get In Touch</h1>
           <p>We're here to help and answer any questions you might have</p>
         </div>
       </div>

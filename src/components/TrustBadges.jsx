@@ -6,19 +6,15 @@ const TrustBadges = () => {
     <section className="trust-badges">
       <div className="trust-header">
         <div className="trust-badge-wrapper">
-          <div className="badge-outer-ring">
-            <div className="badge-inner-ring">
-              <div className="badge-core">
-                <span className="badge-number">#1</span>
-                <span className="badge-label">WORLD<br/>RECORD</span>
-                <span className="badge-sublabel">ORTHOPEDIC<br/>PRODUCTS</span>
-              </div>
-            </div>
-          </div>
+          <img 
+            src="/vdfc-logo.jpeg" 
+            alt="World Record Orthopedic Products" 
+            className="badge-image"
+          />
         </div>
         <div className="trust-title">
-          <h2>Most trusted name in orthotic care</h2>
-          <p>Acclaimed and recommended by healthcare professionals worldwide</p>
+          <h2>MOST TRUSTED IN REHABILIBATION</h2>
+          
         </div>
       </div>
 

@@ -13,9 +13,10 @@ const Hero = () => {
     <section className="hero" id="home">
       <div className="hero-background">
         <img 
-          src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1920&h=800&fit=crop" 
+          src="/Home.jpeg" 
           alt="Orthopedic Support" 
           className="hero-bg-image"
+          loading="eager"
         />
         <div className="hero-overlay"></div>
       </div>
@@ -23,9 +24,9 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-text">
           <h1 className="hero-main-title">
-            LIGHT AS AIR
+            Veracity Driven
             <br />
-            <span className="hero-title-emphasis">STRONG AS PRO</span>
+            <span className="hero-title-emphasis">Fascinating Care</span>
           </h1>
           <p className="hero-tagline">EXPLORE THE ORTHO SURGICAL RANGE!</p>
         </div>

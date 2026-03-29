@@ -24,7 +24,7 @@ const Products = () => {
     <div className="products-page">
       <div className="products-hero">
         <div className="products-hero-content">
-          <img src="/vdfc-logo.svg" alt="VDFC Logo" className="products-hero-logo" />
+          <img src="/vdfc-logo.jpeg" alt="VDFC Logo" className="products-hero-logo" />
           <h1>Our Product Catalog</h1>
           <p>Comprehensive range of orthopedic surgical products and medical devices</p>
         </div>
