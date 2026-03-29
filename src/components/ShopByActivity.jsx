@@ -1,61 +1,34 @@
-import React, { useRef } from 'react';
+import React, { useRef, useMemo } from 'react';
 import './ShopByActivity.css';
+import productsData from '../data/products.json';
 
 const ShopByActivity = () => {
   const scrollContainerRef = useRef(null);
 
-  const activities = [
-    {
-      id: 1,
-      name: 'Aerobics',
-      image: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&h=400&fit=crop'
-    },
-    {
-      id: 2,
-      name: 'Athletics',
-      image: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=500&h=400&fit=crop'
-    },
-    {
-      id: 3,
-      name: 'Badminton',
-      image: 'https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500&h=400&fit=crop'
-    },
-    {
-      id: 4,
-      name: 'Basketball',
-      image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=500&h=400&fit=crop'
-    },
-    {
-      id: 5,
-      name: 'Cricket',
-      image: 'https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=500&h=400&fit=crop'
-    },
-    {
-      id: 6,
-      name: 'Cycling',
-      image: 'https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=500&h=400&fit=crop'
-    },
-    {
-      id: 7,
-      name: 'Football',
-      image: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=500&h=400&fit=crop'
-    },
-    {
-      id: 8,
-      name: 'Gym',
-      image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&h=400&fit=crop'
-    },
-    {
-      id: 9,
-      name: 'Running',
-      image: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&h=400&fit=crop'
-    },
-    {
-      id: 10,
-      name: 'Tennis',
-      image: 'https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=500&h=400&fit=crop'
-    }
-  ];
+  // Map activities to product categories
+  const activityToCategoryMap = {
+    'Recovery': 'Abdominal Belts',
+    'Rehabilitation': 'Cervical Products',
+    'Support': 'Rib Belts',
+    'Stability': 'Shoulder & Arm',
+    'Protection': 'Ankle Splints',
+    'Flexibility': 'Knee Belts',
+    'Posture': 'Lumbar Belts',
+    // 'Wellness': 'Wrist Splints',
+    'Mobility': 'General Therapy',
+    // 'Comfort': 'Walker Products'
+  };
+
+  const activities = useMemo(() => {
+    return Object.entries(activityToCategoryMap).map(([activityName, categoryName], index) => {
+      const product = productsData.find(p => p.category === categoryName);
+      return {
+        id: index + 1,
+        name: activityName,
+        image: product ? product.image : 'https://via.placeholder.com/500x400?text=' + activityName
+      };
+    });
+  }, []);
 
   const scroll = (direction) => {
     if (scrollContainerRef.current) {

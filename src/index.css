@@ -118,6 +118,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -140,6 +141,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background: #ffffff;
+  overflow-x: hidden;
 }
 
 h1 {

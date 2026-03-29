@@ -6,6 +6,7 @@
   z-index: 1001;
   border-bottom: 2px solid #3b82f6;
   box-shadow: 0 2px 4px rgba(30, 58, 138, 0.2);
+  overflow-x: hidden;
 }
 
 .announcement-content {

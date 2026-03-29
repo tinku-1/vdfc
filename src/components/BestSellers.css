@@ -2,6 +2,7 @@
   background: linear-gradient(180deg, #ffffff 0%, #eff6ff 100%);
   padding: 3rem 2rem;
   animation: fadeIn 1s ease;
+  overflow-x: hidden;
 }
 
 .best-sellers-header {

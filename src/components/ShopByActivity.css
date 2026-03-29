@@ -1,7 +1,8 @@
 .shop-by-activity {
   background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
-  padding: 3rem 2rem;
+  padding: 3rem 0;
   animation: fadeIn 1s ease;
+  overflow: hidden;
 }
 
 .activity-header {
@@ -10,7 +11,7 @@
   align-items: center;
   max-width: 1400px;
   margin: 0 auto 2rem;
-  padding: 0 1rem;
+  padding: 0 2rem;
   animation: fadeInDown 0.8s ease;
 }
 
@@ -40,6 +41,7 @@
   scrollbar-width: none;
   -ms-overflow-style: none;
   padding: 1rem 0;
+  width: 100%;
 }
 
 .activity-scroll::-webkit-scrollbar {
@@ -50,7 +52,7 @@
   display: flex;
   gap: 2rem;
   padding: 1rem 2rem;
-  min-width: min-content;
+  min-width: max-content;
 }
 
 .activity-card {

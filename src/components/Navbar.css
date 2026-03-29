@@ -7,6 +7,7 @@
   box-shadow: 0 4px 12px rgba(30, 58, 138, 0.12);
   border-bottom: 2px solid rgba(59, 130, 246, 0.2);
   animation: fadeInDown 0.6s ease;
+  overflow-x: hidden;
 }
 
 .navbar-top-container {
@@ -103,6 +104,8 @@
   flex: 0 0 auto;
   align-items: center;
   animation: scaleIn 0.8s ease 0.4s backwards;
+  margin-left: auto;
+  margin-right: 1.5rem;
 }
 
 .search-input {

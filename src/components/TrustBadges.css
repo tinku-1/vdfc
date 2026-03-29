@@ -12,6 +12,8 @@
   margin-bottom: 4rem;
   flex-wrap: wrap;
   animation: fadeInDown 0.8s ease;
+  position: relative;
+  left: 100px;
 }
 
 .trust-badge-wrapper {

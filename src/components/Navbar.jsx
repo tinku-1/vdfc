@@ -40,10 +40,6 @@ const Navbar = ({ onAdminClick }) => {
             />
             <button type="submit" className="search-btn">Search</button>
           </form>
-
-          <button className="admin-btn-top" onClick={onAdminClick}>
-            🔐 ADMIN
-          </button>
         </div>
       </nav>
     </>

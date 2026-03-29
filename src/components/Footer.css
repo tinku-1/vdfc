@@ -4,6 +4,7 @@
   padding: 3rem 2rem 1.5rem;
   border-top: 4px solid #3b82f6;
   animation: fadeInUp 1s ease;
+  overflow-x: hidden;
 }
 
 .footer-logo-section {

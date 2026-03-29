@@ -1,59 +1,26 @@
-import React, { useRef } from 'react';
+import React, { useRef, useMemo } from 'react';
 import './BestSellers.css';
+import productsData from '../data/products.json';
 
 const BestSellers = () => {
   const scrollContainerRef = useRef(null);
 
-  const categories = [
-    {
-      id: 1,
-      name: 'Abdominal Support',
-      items: '17 items',
-      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=300&fit=crop'
-    },
-    {
-      id: 2,
-      name: 'Ankle and Foot Support',
-      items: '119 items',
-      image: 'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=300&h=300&fit=crop'
-    },
-    {
-      id: 3,
-      name: 'Back Support',
-      items: '39 items',
-      image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=300&h=300&fit=crop'
-    },
-    {
-      id: 4,
-      name: 'Elbow Support',
-      items: '36 items',
-      image: 'https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=300&h=300&fit=crop'
-    },
-    {
-      id: 5,
-      name: 'Knee Support',
-      items: '111 items',
-      image: 'https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=300&h=300&fit=crop'
-    },
-    {
-      id: 6,
-      name: 'Neck Support',
-      items: '46 items',
-      image: 'https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=300&h=300&fit=crop'
-    },
-    {
-      id: 7,
-      name: 'Wrist Support',
-      items: '28 items',
-      image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=300&h=300&fit=crop'
-    },
-    {
-      id: 8,
-      name: 'Shoulder Support',
-      items: '32 items',
-      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=300&fit=crop'
-    }
-  ];
+  // Get unique categories and their first product image
+  const categories = useMemo(() => {
+    const categoryMap = {};
+    
+    productsData.forEach(product => {
+      if (!categoryMap[product.category]) {
+        categoryMap[product.category] = {
+          name: product.category,
+          image: product.image,
+          items: `${productsData.filter(p => p.category === product.category).length} items`
+        };
+      }
+    });
+
+    return Object.values(categoryMap).slice(0, 8); // Limit to 8 categories
+  }, []);
 
   const scroll = (direction) => {
     if (scrollContainerRef.current) {
@@ -104,7 +71,7 @@ const BestSellers = () => {
       <div className="categories-scroll" ref={scrollContainerRef}>
         <div className="categories-container">
           {categories.map((category) => (
-            <div key={category.id} className="category-item">
+            <div key={category.name} className="category-item">
               <div className="category-circle">
                 <img src={category.image} alt={category.name} />
               </div>

@@ -34,14 +34,6 @@ const About = () => {
 
   return (
     <div className="about-page">
-      <div className="about-hero">
-        <div className="about-hero-content">
-          <img src="/vdfc-logo.jpeg" alt="VDFC Logo" className="about-hero-logo" />
-          <h1>About Ortho Surgical Products</h1>
-          <p>Leading the way in orthopedic surgical innovation for over 30 years</p>
-        </div>
-      </div>
-
       <section className="about-intro">
         <div className="about-intro-content">
           <div className="intro-text">
