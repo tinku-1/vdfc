@@ -13,8 +13,7 @@ const BestSellers = () => {
       if (!categoryMap[product.category]) {
         categoryMap[product.category] = {
           name: product.category,
-          image: product.image,
-          items: `${productsData.filter(p => p.category === product.category).length} items`
+          image: product.image
         };
       }
     });
@@ -76,7 +75,6 @@ const BestSellers = () => {
                 <img src={category.image} alt={category.name} />
               </div>
               <h3>{category.name}</h3>
-              <p>{category.items}</p>
             </div>
           ))}
         </div>

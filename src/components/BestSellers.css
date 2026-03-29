@@ -217,18 +217,6 @@
   transform: scale(1.05);
 }
 
-.category-item p {
-  font-size: 1rem;
-  color: #666;
-  margin: 0;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.category-item:hover p {
-  color: var(--color-dark);
-}
-
 @media (max-width: 768px) {
   .best-sellers {
     padding: 3.5rem 1.5rem;
@@ -264,10 +252,6 @@
 
   .category-item h3 {
     font-size: 1.05rem;
-  }
-
-  .category-item p {
-    font-size: 0.9rem;
   }
 }
 
@@ -312,10 +296,6 @@
   .category-item h3 {
     font-size: 0.9rem;
   }
-
-  .category-item p {
-    font-size: 0.8rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -348,9 +328,5 @@
 
   .category-item h3 {
     font-size: 0.8rem;
-  }
-
-  .category-item p {
-    font-size: 0.75rem;
   }
 }
