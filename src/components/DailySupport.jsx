@@ -5,15 +5,15 @@ const DailySupport = () => {
   const categories = [
     {
       id: 1,
-      name: 'Office',
-      items: '5 items',
-      image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=400&fit=crop'
+      name: 'CHAPPELS 1',
+      items: 'Premium Product',
+      image: '/products/chapples/CHAPPLES1.jpeg'
     },
     {
       id: 2,
-      name: 'Posture',
-      items: '3 items',
-      image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=400&fit=crop'
+      name: 'CHAPPELS 2',
+      items: 'Premium Product',
+      image: '/products/chapples/CHAPPLES2.jpeg'
     },
     {
       id: 3,
