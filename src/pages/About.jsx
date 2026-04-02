@@ -3,10 +3,10 @@ import './About.css';
 
 const About = () => {
   const milestones = [
-    { year: '2024', title: 'Foundation', description: 'Company established with a vision to revolutionize orthopedic care' },
-    { year: '2025', title: 'FDA Approval', description: 'Received FDA approval for our flagship product line' },
-    { year: '2026', title: 'Global Expansion', description: 'Expanded operations to 50+ countries worldwide' },
-    { year: '2026', title: 'Innovation Award', description: 'Recognized for groundbreaking orthopedic technology' },
+    { year: '1990', title: 'Foundation', description: 'Company established with a vision to revolutionize orthopedic care' },
+    { year: '2000', title: 'FDA Approval', description: 'Received FDA approval for our flagship product line' },
+    { year: '2010', title: 'Global Expansion', description: 'Expanded operations to 50+ countries worldwide' },
+    { year: '2020', title: 'Innovation Award', description: 'Recognized for groundbreaking orthopedic technology' },
   ];
 
   const values = [
@@ -34,12 +34,19 @@ const About = () => {
 
   return (
     <div className="about-page">
+      <div className="about-hero">
+        <div className="about-hero-content">
+          <h1>About Ortho Surgical Products</h1>
+          <p>Leading the way in orthopedic surgical innovation for over 30 years</p>
+        </div>
+      </div>
+
       <section className="about-intro">
         <div className="about-intro-content">
           <div className="intro-text">
             <h2>Our Story</h2>
             <p>
-              Founded in 2025, Ortho Surgical Products has been at the forefront of orthopedic medical device 
+              Founded in 1990, Ortho Surgical Products has been at the forefront of orthopedic medical device 
               manufacturing and innovation. What started as a small operation with a handful of dedicated 
               professionals has grown into a global leader in orthopedic surgical solutions.
             </p>
@@ -52,7 +59,7 @@ const About = () => {
           </div>
           <div className="intro-image">
             <img 
-              src="vdfc-logo.jpeg" 
+              src="https://images.unsplash.com/photo-1581093458791-9d42e3a88dd5?w=600&h=400&fit=crop&q=80" 
               alt="Medical facility"
             />
           </div>
@@ -92,7 +99,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* <section className="about-stats">
+      <section className="about-stats">
         <div className="stats-container">
           <div className="stat-item">
             <h3>30+</h3>
@@ -111,7 +118,7 @@ const About = () => {
             <p>Products</p>
           </div>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 };

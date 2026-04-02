@@ -11,89 +11,37 @@ const Contact = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
-  const [errors, setErrors] = useState({});
-
-  const validateForm = () => {
-    const newErrors = {};
-
-    // Name validation
-    if (!formData.name.trim()) {
-      newErrors.name = 'Full name is required';
-    } else if (formData.name.trim().length < 3) {
-      newErrors.name = 'Name must be at least 3 characters';
-    }
-
-    // Email validation
-    if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Please enter a valid email address';
-    }
-
-    // Subject validation
-    if (!formData.subject.trim()) {
-      newErrors.subject = 'Subject is required';
-    } else if (formData.subject.trim().length < 5) {
-      newErrors.subject = 'Subject must be at least 5 characters';
-    }
-
-    // Message validation
-    if (!formData.message.trim()) {
-      newErrors.message = 'Message is required';
-    } else if (formData.message.trim().length < 10) {
-      newErrors.message = 'Message must be at least 10 characters';
-    }
-
-    return newErrors;
-  };
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [e.target.name]: e.target.value
     });
-    // Clear error for this field when user starts typing
-    if (errors[name]) {
-      setErrors({
-        ...errors,
-        [name]: ''
-      });
-    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    const newErrors = validateForm();
-    
-    if (Object.keys(newErrors).length === 0) {
-      // Form is valid - submit
-      console.log('Form submitted:', formData);
-      setSubmitted(true);
-      setTimeout(() => {
-        setSubmitted(false);
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          subject: '',
-          message: ''
-        });
-        setErrors({});
-      }, 4000);
-    } else {
-      // Form has errors
-      setErrors(newErrors);
-    }
+    // Handle form submission logic here
+    console.log('Form submitted:', formData);
+    setSubmitted(true);
+    setTimeout(() => {
+      setSubmitted(false);
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+      });
+    }, 3000);
   };
 
   return (
     <div className="contact-page">
-      <div className="contact-header">
-        <div className="contact-header-content">
+      <div className="contact-hero">
+        <div className="contact-hero-content">
           <h1>Get In Touch</h1>
-          <p>We're here to help. Send us a message and we'll respond as soon as possible.</p>
+          <p>We're here to help and answer any questions you might have</p>
         </div>
       </div>
 
@@ -151,10 +99,9 @@ const Contact = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
+                required
                 placeholder="John Doe"
-                className={errors.name ? 'input-error' : ''}
               />
-              {errors.name && <span className="error-message">{errors.name}</span>}
             </div>
 
             <div className="form-row">
@@ -166,10 +113,9 @@ const Contact = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
+                  required
                   placeholder="john@example.com"
-                  className={errors.email ? 'input-error' : ''}
                 />
-                {errors.email && <span className="error-message">{errors.email}</span>}
               </div>
 
               <div className="form-group">
@@ -193,10 +139,9 @@ const Contact = () => {
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
+                required
                 placeholder="How can we help you?"
-                className={errors.subject ? 'input-error' : ''}
               />
-              {errors.subject && <span className="error-message">{errors.subject}</span>}
             </div>
 
             <div className="form-group">
@@ -206,17 +151,23 @@ const Contact = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
+                required
                 rows="6"
                 placeholder="Tell us more about your inquiry..."
-                className={errors.message ? 'input-error' : ''}
               />
-              {errors.message && <span className="error-message">{errors.message}</span>}
             </div>
 
             <button type="submit" className="submit-btn">
               Send Message
             </button>
           </form>
+        </div>
+      </div>
+
+      <div className="map-section">
+        <div className="map-placeholder">
+          <p>📍 Visit our headquarters</p>
+          <p className="map-address">123 Medical Plaza, Healthcare District, City, State 12345</p>
         </div>
       </div>
     </div>

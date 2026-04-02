@@ -10,11 +10,34 @@ import Contact from './pages/Contact';
 import AdminLogin from './components/AdminLogin';
 import AdminDashboard from './components/AdminDashboard';
 import Footer from './components/Footer';
-import productsData from './data/products.json';
 import './App.css';
 
+const initialProducts = [
+  {
+    id: 1,
+    name: 'Ortho Screw',
+    image: 'https://via.placeholder.com/100x100?text=Ortho+Screw',
+    shortDescription: 'High-grade stainless steel screw for orthopedic use.',
+    description: 'This ortho screw is made from medical-grade stainless steel, designed for maximum strength and biocompatibility. Used in bone fixation procedures.'
+  },
+  {
+    id: 2,
+    name: 'Bone Plate',
+    image: 'https://via.placeholder.com/100x100?text=Bone+Plate',
+    shortDescription: 'Anatomically contoured bone plate.',
+    description: 'The bone plate is contoured for anatomical fit, providing stable fixation for fracture healing. Made from lightweight titanium alloy.'
+  },
+  {
+    id: 3,
+    name: 'Hip Prosthesis',
+    image: 'https://via.placeholder.com/100x100?text=Hip+Prosthesis',
+    shortDescription: 'Modular hip replacement prosthesis.',
+    description: 'A modular hip prosthesis system for total hip replacement, offering a range of sizes and options for optimal patient outcomes.'
+  }
+];
+
 function App() {
-  const [products, setProducts] = useState(productsData);
+  const [products, setProducts] = useState(initialProducts);
   const [adminMode, setAdminMode] = useState(false);
   const [adminLoggedIn, setAdminLoggedIn] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);

@@ -1,82 +1,81 @@
-import React, { useRef, useMemo } from 'react';
+import React, { useRef, useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './BestSellers.css';
 import productsData from '../data/products.json';
 
 const BestSellers = () => {
-  const scrollContainerRef = useRef(null);
+  const scrollRef = useRef(null);
+  const [activeCategory, setActiveCategory] = useState(null);
 
-  // Get unique categories and their first product image
   const categories = useMemo(() => {
-    const categoryMap = {};
-    
-    productsData.forEach(product => {
-      if (!categoryMap[product.category]) {
-        categoryMap[product.category] = {
-          name: product.category,
-          image: product.image
-        };
+    const map = {};
+    productsData.forEach(p => {
+      if (!map[p.category]) {
+        map[p.category] = { name: p.category, image: p.image, count: 0 };
       }
+      map[p.category].count++;
     });
-
-    return Object.values(categoryMap).slice(0, 8); // Limit to 8 categories
+    return Object.values(map).slice(0, 10);
   }, []);
 
-  const scroll = (direction) => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = 300;
-      scrollContainerRef.current.scrollBy({
-        left: direction === 'left' ? -scrollAmount : scrollAmount,
-        behavior: 'smooth'
-      });
+  const scroll = (dir) => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: dir === 'left' ? -320 : 320, behavior: 'smooth' });
     }
   };
 
   return (
-    <section id="best-sellers" className="best-sellers">
-      <div className="best-sellers-header">
-        <h2>Best Sellers</h2>
-        <div className="scroll-buttons">
-          <button className="scroll-btn scroll-btn-left" onClick={() => scroll('left')} aria-label="Scroll left">
-            <div className="button-box">
-              <span className="button-elem">
-                <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"></path>
-                </svg>
-              </span>
-              <span className="button-elem">
-                <svg viewBox="0 0 46 40">
-                  <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"></path>
-                </svg>
-              </span>
-            </div>
-          </button>
-          <button className="scroll-btn scroll-btn-right" onClick={() => scroll('right')} aria-label="Scroll right">
-            <div className="button-box">
-              <span className="button-elem">
-                <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"></path>
-                </svg>
-              </span>
-              <span className="button-elem">
-                <svg viewBox="0 0 46 40">
-                  <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"></path>
-                </svg>
-              </span>
-            </div>
-          </button>
+    <section className="bestsellers-section" id="best-sellers">
+      <div className="section-container">
+        <div className="section-header">
+          <div>
+            <span className="section-eyebrow">Our Range</span>
+            <h2 className="section-title">Shop By Category</h2>
+            <p className="section-subtitle">Browse our comprehensive collection of orthopedic rehabilitation products</p>
+          </div>
+          <div className="scroll-controls">
+            <button className="scroll-ctrl-btn" onClick={() => scroll('left')} aria-label="Previous">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button className="scroll-ctrl-btn" onClick={() => scroll('right')} aria-label="Next">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
         </div>
-      </div>
 
-      <div className="categories-scroll" ref={scrollContainerRef}>
-        <div className="categories-container">
-          {categories.map((category) => (
-            <div key={category.name} className="category-item">
-              <div className="category-circle">
-                <img src={category.image} alt={category.name} />
+        <div className="categories-track" ref={scrollRef}>
+          {categories.map((cat) => (
+            <Link
+              to={`/products?category=${encodeURIComponent(cat.name)}`}
+              key={cat.name}
+              className={`cat-card ${activeCategory === cat.name ? 'active' : ''}`}
+              onClick={() => setActiveCategory(cat.name)}
+            >
+              <div className="cat-img-wrap">
+                <img src={cat.image} alt={cat.name} className="cat-img" loading="lazy" />
+                <div className="cat-overlay">
+                  <span className="cat-explore">Explore →</span>
+                </div>
               </div>
-              <h3>{category.name}</h3>
-            </div>
+              <div className="cat-info">
+                <h3 className="cat-name">{cat.name}</h3>
+                <span className="cat-count">{cat.count} products</span>
+              </div>
+            </Link>
           ))}
+        </div>
+
+        <div className="section-footer-link">
+          <Link to="/products" className="view-all-btn">
+            View All Products
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </Link>
         </div>
       </div>
     </section>

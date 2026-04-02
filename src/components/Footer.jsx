@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-logo-section">
         <img src="/vdfc-logo.jpeg" alt="VDFC Logo" className="footer-logo" />
-        <p className="footer-tagline">Leading Orthopedic Innovation Since 1990</p>
+        {/* <p className="footer-tagline">Leading Orthopedic Innovation Since 1990</p> */}
       </div>
       <div className="footer-content">
         <div className="footer-section">
