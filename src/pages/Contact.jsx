@@ -54,28 +54,29 @@ const Contact = () => {
             <div className="info-card">
               <div className="info-icon">📍</div>
               <h3>Address</h3>
-              <p>123 Medical Plaza<br />Healthcare District<br />City, State 12345</p>
+              <p>VDFC HEALTHCARE<br />#17-1-391/T/188,Portion-1,1st floor<br />Saraswathi Nagar,Saidabad<br />HYDERABAD-59,Telangana,INDIA</p>
             </div>
 
             <div className="info-card">
               <div className="info-icon">📞</div>
               <h3>Phone</h3>
-              <p>+1 (555) 123-4567<br />Mon-Fri: 9AM - 6PM</p>
+              <p>+91 8008220169<br />Mon-Fri: 9AM - 6PM</p>
             </div>
 
             <div className="info-card">
               <div className="info-icon">✉️</div>
               <h3>Email</h3>
-              <p>info@orthosurgical.com<br />support@orthosurgical.com</p>
+              <p>vdfchealthcare@gmail.com<br /></p>
             </div>
 
             <div className="info-card">
               <div className="info-icon">🌐</div>
               <h3>Social Media</h3>
-              <div className="social-links">
-                <a href="#" aria-label="Facebook">Facebook</a>
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="Twitter">Twitter</a>
+              <div className="social-links contact-social">
+                <a href="#" aria-label="Facebook"><i className="social-icon">f</i></a>
+                <a href="#" aria-label="LinkedIn"><i className="social-icon">in</i></a>
+                <a href="#" aria-label="Twitter"><i className="social-icon">t</i></a>
+                <a href="#" aria-label="Instagram"><i className="social-icon">i</i></a>
               </div>
             </div>
           </div>
