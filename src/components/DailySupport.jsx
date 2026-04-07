@@ -17,7 +17,7 @@ const DailySupport = () => {
         <div className="section-header">
           <div>
             <span className="section-eyebrow">Everyday Wellness</span>
-            <h2 className="section-title">Shop for Daily Support</h2>
+            <h2 className="section-title">Choose for Daily Support</h2>
             <p className="section-subtitle">Products designed for every stage of life and every condition</p>
           </div>
         </div>

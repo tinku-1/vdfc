@@ -72,7 +72,7 @@
 
 .brand-name {
   font-family: 'Magneto', 'Poppins', sans-serif;
-  font-size: 1.45rem;
+  font-size: 2rem;
   font-weight: 800;
   color: #e6007e;
   letter-spacing: 0.04em;
@@ -219,10 +219,12 @@
 .hamburger.open span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
+
 .hamburger.open span:nth-child(2) {
   opacity: 0;
   transform: scaleX(0);
 }
+
 .hamburger.open span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
@@ -285,7 +287,10 @@
   padding: 0.25rem;
   transition: color 0.2s;
 }
-.clear-btn:hover { color: #1e3a8a; }
+
+.clear-btn:hover {
+  color: #1e3a8a;
+}
 
 /* ─── Mobile Menu Overlay ─── */
 .mobile-menu-overlay {
@@ -344,6 +349,7 @@
   color: #64748b;
   transition: all 0.2s;
 }
+
 .mobile-close-btn:hover {
   background: #fee2e2;
   color: #ef4444;
@@ -389,6 +395,7 @@
   transition: all 0.25s;
   text-align: left;
 }
+
 .mobile-admin-btn:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
@@ -401,6 +408,7 @@
   flex-direction: column;
   gap: 0.4rem;
 }
+
 .mobile-menu-footer p {
   font-size: 0.82rem;
   color: #64748b;
@@ -411,6 +419,7 @@
   .desktop-nav {
     display: none;
   }
+
   .hamburger {
     display: flex;
   }
@@ -420,12 +429,15 @@
   .navbar-inner {
     padding: 0.65rem 1rem;
   }
+
   .brand-name {
     font-size: 1.1rem;
   }
+
   .search-inner {
     padding: 0 1rem;
   }
+
   .admin-btn {
     display: none;
   }

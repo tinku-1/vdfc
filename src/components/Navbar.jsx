@@ -50,7 +50,7 @@ const Navbar = ({ onAdminClick }) => {
             </div>
             <div className="brand-text">
               <span className="brand-name">VDFC</span>
-              <span className="brand-tagline">Ortho Surgical</span>
+              {/* <span className="brand-tagline">Ortho Surgical</span> */}
             </div>
           </Link>
 
@@ -85,8 +85,8 @@ const Navbar = ({ onAdminClick }) => {
             {/* Admin Button */}
             <button className="admin-btn" onClick={onAdminClick}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="16" height="16">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
               </svg>
               Admin
             </button>
@@ -128,7 +128,7 @@ const Navbar = ({ onAdminClick }) => {
 
       {/* Mobile Menu Overlay */}
       <div className={`mobile-menu-overlay ${isMenuOpen ? 'open' : ''}`} onClick={() => setIsMenuOpen(false)} />
-      
+
       {/* Mobile Menu Drawer */}
       <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
         <div className="mobile-menu-header">

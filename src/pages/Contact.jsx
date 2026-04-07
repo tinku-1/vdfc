@@ -41,7 +41,7 @@ const Contact = () => {
       <div className="contact-hero">
         <div className="contact-hero-content">
           <h1>Get In Touch</h1>
-          <p>We're here to help and answer any questions you might have</p>
+          {/* <p>We're here to help and answer any questions you might have</p> */}
         </div>
       </div>
 
@@ -164,12 +164,12 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="map-section">
+      {/* <div className="map-section">
         <div className="map-placeholder">
           <p>📍 Visit our headquarters</p>
           <p className="map-address">123 Medical Plaza, Healthcare District, City, State 12345</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

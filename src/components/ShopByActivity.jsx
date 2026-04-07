@@ -35,7 +35,7 @@ const ShopByActivity = () => {
         <div className="section-header">
           <div>
             <span className="section-eyebrow">Find your fit</span>
-            <h2 className="section-title">Shop By Activity</h2>
+            <h2 className="section-title">Choose By Activity</h2>
             <p className="section-subtitle">Select your condition or lifestyle to find the right support</p>
           </div>
           <div className="scroll-controls">

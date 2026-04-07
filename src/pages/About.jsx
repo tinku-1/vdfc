@@ -35,7 +35,7 @@ const About = () => {
       <div className="about-hero">
         <div className="about-hero-content">
           <h1>About Ortho Surgical Products</h1>
-          <p>An emerging leader in orthopedic surgical innovation</p>
+          {/* <p>An emerging leader in orthopedic surgical innovation</p> */}
         </div>
       </div>
 
@@ -44,19 +44,19 @@ const About = () => {
           <div className="intro-text">
             <h2>Our Story</h2>
             <p>
-              Recently founded, Ortho Surgical Products is an emerging leader in orthopedic medical device 
-              manufacturing and innovation. We are a dedicated team of professionals committed to providing 
+              Recently founded, Ortho Surgical Products is an emerging leader in orthopedic medical device
+              manufacturing and innovation. We are a dedicated team of professionals committed to providing
               top-quality orthopedic surgical solutions.
             </p>
             <p>
-              Our commitment to excellence, innovation, and patient care drives us to deliver reliable 
-              products that improve the lives of patients. We work closely with healthcare professionals 
+              Our commitment to excellence, innovation, and patient care drives us to deliver reliable
+              products that improve the lives of patients. We work closely with healthcare professionals
               to ensure our products meet high standards of quality and effectiveness.
             </p>
           </div>
           <div className="intro-image">
-            <img 
-              src="https://images.unsplash.com/photo-1581093458791-9d42e3a88dd5?w=600&h=400&fit=crop&q=80" 
+            <img
+              src="vdfc-logo.jpeg"
               alt="Medical facility"
             />
           </div>
@@ -96,7 +96,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="about-stats">
+      {/* <section className="about-stats">
         <div className="stats-container">
           <div className="stat-item">
             <h3>New</h3>
@@ -115,7 +115,7 @@ const About = () => {
             <p>Products</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
