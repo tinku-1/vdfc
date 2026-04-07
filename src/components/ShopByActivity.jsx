@@ -66,7 +66,7 @@ const ShopByActivity = () => {
                 <span className="activity-icon-badge">{item.icon}</span>
                 <h3 className="activity-name">{item.name}</h3>
                 <p className="activity-cat">{item.category}</p>
-                <button className="activity-btn">Shop Now</button>
+                {/* <button className="activity-btn">Shop Now</button> */}
               </div>
             </div>
           ))}
