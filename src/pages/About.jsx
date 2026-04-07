@@ -56,7 +56,7 @@ const About = () => {
           </div>
           <div className="intro-image">
             <img
-              src="vdfc-logo.jpeg"
+              src="public/vdfc-logo.jpeg"
               alt="Medical facility"
             />
           </div>
