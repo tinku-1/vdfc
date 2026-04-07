@@ -55,7 +55,7 @@ const TrustBadges = () => {
       <div className="trust-inner">
         <div className="trust-logo-col">
           <div className="trust-logo-wrap">
-            <img src="/vdfc-logo.jpeg" alt="VDFC" className="trust-logo" />
+            <img src="/vdfc-logo-transparent.png" alt="VDFC" className="trust-logo" />
           </div>
           <h2 className="trust-heading">Most Trusted in <span>Rehabilitation</span></h2>
           <p className="trust-desc">

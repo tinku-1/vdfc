@@ -4,10 +4,10 @@ import './DailySupport.css';
 const categories = [
   { id: 1, name: 'Chappal Support', label: 'Footwear', image: '/products/chapples/CHAPPLES1.jpeg', color: '#eff6ff' },
   { id: 2, name: 'Ortho Chappal', label: 'Orthopedic', image: '/products/chapples/CHAPPLES2.jpeg', color: '#f0fdf4' },
-  { id: 3, name: 'Pregnancy Care', label: 'Maternity', image: 'https://images.unsplash.com/photo-1584515933487-779824d29309?w=400&h=400&fit=crop', color: '#fdf4ff' },
-  { id: 4, name: 'Sleep Support', label: 'Comfort', image: 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=400&h=400&fit=crop', color: '#fff7ed' },
-  { id: 5, name: 'Travel Aid', label: 'Mobility', image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=400&fit=crop', color: '#f0f9ff' },
-  { id: 6, name: 'Paediatric', label: 'Kids', image: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=400&fit=crop', color: '#fefce8' },
+  // { id: 3, name: 'Pregnancy Care', label: 'Maternity', image: 'https://images.unsplash.com/photo-1584515933487-779824d29309?w=400&h=400&fit=crop', color: '#fdf4ff' },
+  // { id: 4, name: 'Sleep Support', label: 'Comfort', image: 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=400&h=400&fit=crop', color: '#fff7ed' },
+  // { id: 5, name: 'Travel Aid', label: 'Mobility', image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=400&fit=crop', color: '#f0f9ff' },
+  // { id: 6, name: 'Paediatric', label: 'Kids', image: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=400&fit=crop', color: '#fefce8' },
 ];
 
 const DailySupport = () => {

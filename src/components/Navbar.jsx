@@ -46,7 +46,7 @@ const Navbar = ({ onAdminClick }) => {
           {/* Brand */}
           <Link to="/" className="navbar-brand">
             <div className="brand-logo-wrapper">
-              <img src="/vdfc-logo.jpeg" alt="VDFC Logo" className="brand-logo" />
+              <img src="/vdfc-logo-transparent.png" alt="VDFC Logo" className="brand-logo" />
             </div>
             <div className="brand-text">
               <span className="brand-name">VDFC</span>
@@ -133,7 +133,7 @@ const Navbar = ({ onAdminClick }) => {
       <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
         <div className="mobile-menu-header">
           <Link to="/" className="navbar-brand" onClick={() => setIsMenuOpen(false)}>
-            <img src="/vdfc-logo.jpeg" alt="VDFC" className="brand-logo" style={{ height: '36px' }} />
+            <img src="/vdfc-logo-transparent.png" alt="VDFC" className="brand-logo" style={{ height: '36px' }} />
             <div className="brand-text">
               <span className="brand-name">VDFC</span>
               <span className="brand-tagline">Ortho Surgical</span>

@@ -20,18 +20,18 @@ const Products = () => {
   const filteredProducts = products.filter(product => {
     const matchesCategory = selectedCategory === 'all' || product.category === selectedCategory;
     const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          product.description.toLowerCase().includes(searchQuery.toLowerCase());
+      product.description.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesSearch;
   });
 
   return (
     <div className="products-page">
-      <div className="products-hero">
+      {/* <div className="products-hero">
         <div className="products-hero-content">
           <h1>Our Product Catalog</h1>
           <p>Comprehensive range of orthopedic surgical products and medical devices</p>
         </div>
-      </div>
+      </div> */}
 
       <div className="products-container">
         <aside className="products-sidebar">
@@ -66,8 +66,8 @@ const Products = () => {
         <main className="products-main">
           <div className="products-header">
             <h2>
-              {selectedCategory === 'all' 
-                ? 'All Products' 
+              {selectedCategory === 'all'
+                ? 'All Products'
                 : categories.find(c => c.id === selectedCategory)?.name}
             </h2>
             <p className="products-count">{filteredProducts.length} products found</p>
