@@ -42,7 +42,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2.5rem;
   padding-bottom: 2.5rem;
-  border-bottom: 2px solid rgba(30, 58, 138, 0.4);
+  border-bottom: 2px solid rgba(59, 64, 80, 0.4);
   animation: fadeIn 1.2s ease;
 }
 

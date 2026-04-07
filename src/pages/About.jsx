@@ -3,10 +3,8 @@ import './About.css';
 
 const About = () => {
   const milestones = [
-    { year: '1990', title: 'Foundation', description: 'Company established with a vision to revolutionize orthopedic care' },
-    { year: '2000', title: 'FDA Approval', description: 'Received FDA approval for our flagship product line' },
-    { year: '2010', title: 'Global Expansion', description: 'Expanded operations to 50+ countries worldwide' },
-    { year: '2020', title: 'Innovation Award', description: 'Recognized for groundbreaking orthopedic technology' },
+    { year: '2023', title: 'Foundation', description: 'Company established with a vision to revolutionize orthopedic care' },
+    { year: '2024', title: 'Product Launch', description: 'Successfully launched our primary line of orthopedic surgical products' },
   ];
 
   const values = [
@@ -37,7 +35,7 @@ const About = () => {
       <div className="about-hero">
         <div className="about-hero-content">
           <h1>About Ortho Surgical Products</h1>
-          <p>Leading the way in orthopedic surgical innovation for over 30 years</p>
+          <p>An emerging leader in orthopedic surgical innovation</p>
         </div>
       </div>
 
@@ -46,15 +44,14 @@ const About = () => {
           <div className="intro-text">
             <h2>Our Story</h2>
             <p>
-              Founded in 1990, Ortho Surgical Products has been at the forefront of orthopedic medical device 
-              manufacturing and innovation. What started as a small operation with a handful of dedicated 
-              professionals has grown into a global leader in orthopedic surgical solutions.
+              Recently founded, Ortho Surgical Products is an emerging leader in orthopedic medical device 
+              manufacturing and innovation. We are a dedicated team of professionals committed to providing 
+              top-quality orthopedic surgical solutions.
             </p>
             <p>
-              Our commitment to excellence, innovation, and patient care has driven us to develop cutting-edge 
-              products that improve the lives of millions of patients worldwide. We work closely with orthopedic 
-              surgeons, healthcare professionals, and researchers to ensure our products meet the highest standards 
-              of quality and effectiveness.
+              Our commitment to excellence, innovation, and patient care drives us to deliver reliable 
+              products that improve the lives of patients. We work closely with healthcare professionals 
+              to ensure our products meet high standards of quality and effectiveness.
             </p>
           </div>
           <div className="intro-image">
@@ -102,19 +99,19 @@ const About = () => {
       <section className="about-stats">
         <div className="stats-container">
           <div className="stat-item">
-            <h3>30+</h3>
-            <p>Years of Experience</p>
+            <h3>New</h3>
+            <p>Emerging Brand</p>
           </div>
           <div className="stat-item">
-            <h3>50+</h3>
-            <p>Countries Worldwide</p>
+            <h3>100%</h3>
+            <p>Committed</p>
           </div>
           <div className="stat-item">
-            <h3>5.7M+</h3>
-            <p>Happy Customers</p>
+            <h3>10M+</h3>
+            <p>Patients Targeted</p>
           </div>
           <div className="stat-item">
-            <h3>250+</h3>
+            <h3>75+</h3>
             <p>Products</p>
           </div>
         </div>
